@@ -12,8 +12,8 @@ You have access to a CLI tool at `tools/ecowitt_cli.py` that communicates with E
 
 - **Device**: GW3000B-WIFIE3EB
 - **Firmware**: GW3000B_V1.1.4
-- **IP**: 192.168.68.77 (already configured in `tools/.ecowitt_host`)
-- **MAC**: 5C:01:3B:38:E3:EB
+- **IP**: (configured in `tools/.ecowitt_host`)
+- **MAC**: (device-specific)
 - **Units**: Temperature: °F, Pressure: inHg, Wind: mph, Rain: in, Light: Klux
 
 ## Connected Sensors
@@ -29,9 +29,9 @@ The WH90 is an all-in-one ultrasonic outdoor weather station. No traditional rai
 
 A 256GB micro SD card (SN256, SDHC/SDXC) is installed and actively logging every **5 minutes**.
 
-- **Data port**: Files are served on **port 81** (`http://192.168.68.77:81/<filename>`)
+- **Data port**: Files are served on **port 81** (`http://<device-ip>:81/<filename>`)
 - **File listing**: `get_sdmmc_info` endpoint on port 80
-- **Web UI**: `http://192.168.68.77/cardInfo.html` (login: admin, leave password blank)
+- **Web UI**: `http://<device-ip>/cardInfo.html` (login: admin, leave password blank)
 
 ### CSV File Naming
 
