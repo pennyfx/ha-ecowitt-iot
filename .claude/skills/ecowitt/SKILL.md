@@ -6,13 +6,13 @@ argument-hint: "[command] e.g. weather, info, iot list, iot switch, history"
 
 # Ecowitt Device Control
 
-You have access to a CLI tool at `tools/ecowitt_cli.py` that communicates with Ecowitt weather station gateways via their local HTTP API. No external dependencies are needed (stdlib only).
+You have access to a CLI tool at `scripts/ecowitt_cli.py` (relative to this skill directory) that communicates with Ecowitt weather station gateways via their local HTTP API. No external dependencies are needed (stdlib only).
 
 ## Device Details
 
 - **Device**: GW3000B-WIFIE3EB
 - **Firmware**: GW3000B_V1.1.4
-- **IP**: (configured in `tools/.ecowitt_host`)
+- **IP**: (configured in `scripts/.ecowitt_host`)
 - **MAC**: (device-specific)
 - **Units**: Temperature: °F, Pressure: inHg, Wind: mph, Rain: in, Light: Klux
 
@@ -45,7 +45,7 @@ Time, Timestamp, Indoor Temperature(°F), Indoor Humidity(%), Outdoor Temperatur
 
 ## Available Commands
 
-Run commands using: `python3 tools/ecowitt_cli.py <command>`
+Run commands using: `python3 scripts/ecowitt_cli.py <command>`
 
 | Command | Description |
 |---------|-------------|
